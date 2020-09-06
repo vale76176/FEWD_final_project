@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DMEC Team's User Manuals</title>
+    <title>DMEC Team User Manuals</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
@@ -41,29 +41,142 @@
         <p>We have a lot of new people on the team, several remote team members, so lets get to know each other!</br>It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration?</p>
 
         <div class="manuals">
-            <input type="text" id="user-name"></input>
-            <button id="Submit">Submit</button>
+          
+            <!-- categories for form:  Environments I like to work in / Preferred working hours / Communication preferences / Preferred ways to receive feedback / Things I need / How I learn best / Things I struggle with / Things I love / If I were an animated gif/meme/animal/song, I would be... / My favorite saying /Other things I want you to know about me -->
+        <section class="creating-user-manual">
+            <h1 id="beginning-of-questionnaire">Building Your User Manual</h1>
+            <h2>Work Preferences</h2>
+            <hr>
+            <form>
+              <fieldset>
+                <legend>Preferred name</legend>
+                <label for="name">Name</label>
+                <input type="number" id="name" placeholder="Enter name/nickname">
+                <input type="submit">
+              </fieldset>
+            </form>
+            <form>
+                <fieldset>
+                  <legend>Preferred meeting time hours</legend>
+                  <label for="select">Select List</label>
+                  <select id="select">
+                    <option value>Choose preferred time</option>
+                    <optgroup label="Early West Coast Bird">
+                      <option value>5-8 am PST / 14-17 hr CET</option>
+                      <option value>8-10 am PST / 17-19 hr CET</option>
+                    </optgroup>
+                    <optgroup label="Early Dutch Express">
+                      <option value>8 pm - 10 pm PST / 5-7 am CET</option>
+                      <option value>10 pm - 12 am PST / 7-9 am CET</option>
+                    </optgroup>
+                  </select>
+                  <button type="submit">Submit</button>
+                </fieldset>
+              </form>
+              <h2>Feedback and Collaboration</h2>
+              <hr>
+              <form>
+                <fieldset>
+                  <legend>Preferred Ways to Receive Feedback</legend>
+                  <label for="text-for-feedback">We have a diverse team that has grown exponentially over the past few months. We all bring different talents and skills, as well as different communication styles. Let's your peers know how comfortable you feel with blunt and to the point feeback or if you rather they have a more softer approach when they bring things up. Would you rather they do it on a standup? Or schedule a 1:1 chat? If you are unresponsive via Azure and Teams, can they call you on your cell or should they Cc your manager in an email to check in on you? Help your teammates find out how to bring out the best in you!</label></br>
+                 <textarea id="textarea-1"></textarea>
+                </fieldset>
+              </form>
+              <h2>Communication Preferences</h2>
+              <hr>
+              <form>
+                <fieldset>
+                  <legend>Contact Details</legend>
+                  <label for="full-name">Full Name</label>
+                  <input type="text" id="full-name" placeholder="Your name here">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" placeholder="name@email.com">
+                  <label for="select">Select preffered communication tool</label>
+                  <select id="select">
+                    <option value>Teams</option>
+                    <option value>Skype</option>
+                    <option value>Azure</option>
+                    <option value>Email</option>
+                 </select>
+                  <input type="submit" value="Submit this form">
+                </fieldset>
+              </form>
+             
+              <h2>Priorities</h2>
+              <hr>
+              <form>
+                <fieldset>
+                  <legend>Things I need to succeed</legend>
+                  <label for="checkbox-container">How do you learn best?</label>
+                  <div class="checkbox-container">
+                    <div class="checkbox">
+                      <input type="checkbox" id="checkbox1">
+                      <label for="checkbox1"><span>through repetition</span></label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="checkbox2">
+                      <label for="checkbox2"><span>watching and taking copious notes</span></label>
+                    </div>
+                    <div class="checkbox">
+                      <input type="checkbox" id="checkbox3">
+                      <label for="checkbox3"><span>independently</span></label>
+                    </div>
+                  </div>
+                  
+                  <input type="submit" value="Submit this form">
+                </fieldset>
+              </form>
+              <h2>Improvement Opportunities</h2>
+              <hr>
+              <form>
+                <fieldset>
+                  <legend>Things I struggle with</legend>
+                  <label for="radio-container">You can only pick one! (sorry)</label>
+                  <div class="radio-container">
+                    <div class="radio">
+                      <input type="radio" id="radio1" name="radio-group" checked>
+                      <label for="radio1"><span>unnecessary reply all emails</span></label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" id="radio2" name="radio-group">
+                      <label for="radio2"><span>5 am meetings</span></label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" id="radio3" name="radio-group">
+                      <label for="radio3"><span>quarterly business reviews with suppliers</span></label>
+                    </div>
+                  </div>
+                  <div class="radio">
+                    <input type="radio" id="radio3" name="radio-group">
+                    <label for="radio3"><span>other</span></label>
+                  </div>
+                    <input type="submit" value="Submit this form">
+                </fieldset>
+              </form>
+              <h2>Inspiration</h2>
+              <hr>
+              <form>
+                <fieldset>
+                  <legend>My favorite quote</legend>
+                  <label for="text-about-quotes">Share your favorite saying or quote!</label></br>
+                 <textarea id="textarea-2"></textarea>
+                </fieldset>
+              </form>
+              <h2>Fun</h2>
+              <hr>
+              <form>
+                <fieldset>
+                  <legend>If I was a GIF/Meme</legend>
+                  <label for="text-about-quotes">Paste a link to your GIF or Meme personified -- Keep it classy!</label></br>
+                 <textarea id="textarea-3"></textarea>
+                </fieldset>
+              </form>
+            </section>
         </div>
+   <p>You can read all the Team's published Manuals <a href="index_2.html">here</a>!</p>
 
-    <!-- <form>
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="Email">
-
-        <label for="first_name">First Name:</label>
-        <input type="text" id="first_name" name="First_Name">
-
-        <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="Last_Name">
-
-        <button type="submit">Sign up!</button>
-    </form>
-
-   <a href="second.html">Second</a>
-
-    <a href="https://google.com>Google</a> -->
-
-    <script src="app.js" charset="utf-8"></script>
-
+   
 </body>
 </html>
+<script src="app.js" charset="utf-8"></script>
 

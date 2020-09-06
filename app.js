@@ -34,9 +34,7 @@ prev.addEventListener('click', () => {
     }
     mainImage.setAttribute('src', images[currentImgIndex])
   })
-
-
-
+  
 
 
 // const scriptURL = 'source google page form'

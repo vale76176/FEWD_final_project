@@ -60,6 +60,17 @@ body {
     margin-top: 6%;
     margin-bottom: 2%;
   }
+  .creating-user-manual {
+    margin-inline: 25px;
+  }
+  .checkbox input, .checkbox label, .radio input, .radio label {
+    display: inline;
+  }
+  #textarea-1, #textarea-2, #the_content {
+    min-height: 600px;
+    min-width: 600px;
+  }  
+
   h2 {
     font-family: 'Assistant', sans-serif;
     font-size: 36px;
@@ -70,22 +81,20 @@ body {
     font-size: 34px;
     text-align: center;
   }
-  .manuals {
-    text-align: center;
-  }
-  
+    
   body {
     background-image: url('images/ps_neutral.png');
   }
-
-    /* input {
-        display: block;
-    }
-
-    button {
-        background-color: cornflowerblue;
-    }
-
-    body {
-        font-family: 'Roboto', sans-serif;
-    } */
+  fieldset {
+    padding: 50px;
+  }
+  input, button, select, textarea {
+    display: block;
+    margin-bottom: 25px;
+  }
+  input[type=text].red-text {
+    color: red;
+  }
+  label {
+    padding-bottom: 10px;
+}
