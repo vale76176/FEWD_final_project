@@ -34,30 +34,24 @@
       
     <div class="team-container">
         <img src="images/team.png" alt="DMEC Team">
-        <h2>Digital Platforms Team User Manuals</h2>
+        <h2>Let's Build Our Own User Manuals!</h2>
     </div>
 
-        <h3>Let's Build Our Own User Manuals!</h3>
-        <p>We have a lot of new people on the team, several remote team members, so lets get to know each other!</br>It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration?</p>
+       <p>We have a lot of new people on the team, several remote team members, so lets get to know each other!</br>It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration?</p>
 
-        <div class="manuals">
+        <!-- <div class="manuals"> -->
           
             <!-- categories for form:  Environments I like to work in / Preferred working hours / Communication preferences / Preferred ways to receive feedback / Things I need / How I learn best / Things I struggle with / Things I love / If I were an animated gif/meme/animal/song, I would be... / My favorite saying /Other things I want you to know about me -->
         <section class="creating-user-manual">
             <h1 id="beginning-of-questionnaire">Building Your User Manual</h1>
-            <h2>Work Preferences</h2>
             <hr>
-            <form>
+             <form>
               <fieldset>
                 <legend>Preferred name</legend>
                 <label for="name">Name</label>
-                <input type="number" id="name" placeholder="Enter name/nickname">
-                <input type="submit">
-              </fieldset>
-            </form>
-            <form>
-                <fieldset>
-                  <legend>Preferred meeting time hours</legend>
+                <input type="text" id="name" placeholder="Enter name/nickname">
+                         
+                <legend>Preferred meeting time hours</legend>
                   <label for="select">Select List</label>
                   <select id="select">
                     <option value>Choose preferred time</option>
@@ -70,43 +64,28 @@
                       <option value>10 pm - 12 am PST / 7-9 am CET</option>
                     </optgroup>
                   </select>
-                  <button type="submit">Submit</button>
-                </fieldset>
-              </form>
-              <h2>Feedback and Collaboration</h2>
-              <hr>
-              <form>
-                <fieldset>
-                  <legend>Preferred Ways to Receive Feedback</legend>
-                  <label for="text-for-feedback">We have a diverse team that has grown exponentially over the past few months. We all bring different talents and skills, as well as different communication styles. Let's your peers know how comfortable you feel with blunt and to the point feeback or if you rather they have a more softer approach when they bring things up. Would you rather they do it on a standup? Or schedule a 1:1 chat? If you are unresponsive via Azure and Teams, can they call you on your cell or should they Cc your manager in an email to check in on you? Help your teammates find out how to bring out the best in you!</label></br>
+               
+             <hr>
+                <legend>Preferred Ways to Receive Feedback</legend>
+                  <label for="text-for-feedback">We have a diverse team that has grown exponentially over the past few months. We have a lot of new folks, several remote team members, so let's get to know each other!! It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration? ​We all bring different talents and skills, as well as different communication styles. Let's your peers know how comfortable you feel with blunt and to the point feeback or if you rather they have a more softer approach when they bring things up. Would you rather they do it on a standup? Or schedule a 1:1 chat? If you are unresponsive via Azure and Teams, can they call you on your cell or should they Cc your manager in an email to check in on you? Help your teammates find out how to bring out the best in you!</label></br>
                  <textarea id="textarea-1"></textarea>
-                </fieldset>
-              </form>
-              <h2>Communication Preferences</h2>
-              <hr>
-              <form>
-                <fieldset>
-                  <legend>Contact Details</legend>
+             <hr>
+                <legend>Contact Details</legend>
                   <label for="full-name">Full Name</label>
-                  <input type="text" id="full-name" placeholder="Your name here">
+                  <input type="text" id="full-name" placeholder="Your name here" autofocus required>
                   <label for="email">Email</label>
                   <input type="text" id="email" placeholder="name@email.com">
-                  <label for="select">Select preffered communication tool</label>
+                  <label for="select">Best way to communicate with me</label>
                   <select id="select">
                     <option value>Teams</option>
                     <option value>Skype</option>
                     <option value>Azure</option>
                     <option value>Email</option>
+                    <option value>1:1 Meeting</option>
                  </select>
-                  <input type="submit" value="Submit this form">
-                </fieldset>
-              </form>
-             
-              <h2>Priorities</h2>
+                           
               <hr>
-              <form>
-                <fieldset>
-                  <legend>Things I need to succeed</legend>
+                <legend>Things I need to succeed</legend>
                   <label for="checkbox-container">How do you learn best?</label>
                   <div class="checkbox-container">
                     <div class="checkbox">
@@ -123,14 +102,8 @@
                     </div>
                   </div>
                   
-                  <input type="submit" value="Submit this form">
-                </fieldset>
-              </form>
-              <h2>Improvement Opportunities</h2>
-              <hr>
-              <form>
-                <fieldset>
-                  <legend>Things I struggle with</legend>
+             <hr>
+                <legend>Things I struggle with</legend>
                   <label for="radio-container">You can only pick one! (sorry)</label>
                   <div class="radio-container">
                     <div class="radio">
@@ -151,28 +124,18 @@
                     <label for="radio3"><span>other</span></label>
                   </div>
                     <input type="submit" value="Submit this form">
-                </fieldset>
-              </form>
-              <h2>Inspiration</h2>
-              <hr>
-              <form>
-                <fieldset>
-                  <legend>My favorite quote</legend>
+            <hr>
+                <legend>My favorite quote</legend>
                   <label for="text-about-quotes">Share your favorite saying or quote!</label></br>
                  <textarea id="textarea-2"></textarea>
-                </fieldset>
-              </form>
-              <h2>Fun</h2>
-              <hr>
-              <form>
-                <fieldset>
-                  <legend>If I was a GIF/Meme</legend>
+                <hr>
+                <legend>If I was a GIF/Meme</legend>
                   <label for="text-about-quotes">Paste a link to your GIF or Meme personified -- Keep it classy!</label></br>
                  <textarea id="textarea-3"></textarea>
                 </fieldset>
               </form>
             </section>
-        </div>
+        <!-- </div> -->
    <p>You can read all the Team's published Manuals <a href="index_2.html">here</a>!</p>
 
    
