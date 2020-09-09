@@ -2,15 +2,44 @@
 body {
     background: #f9f9f9;
   }
-  .container {
+h2 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 36px;
+    text-align: center;
+  }
+h3 {
+    font-family: 'Assistant', sans-serif;
+    font-size: 34px;
+    text-align: center;
+  }
+    
+fieldset {
+    padding: 50px;
+  }
+input, button, select {
+    display: block;
+    margin-bottom: 25px;
+  }
+  #textarea-1, #textarea-2, #textarea-3 {
+    display: block;
+    margin-bottom: 25px;
+  }
+input[type=text].red-text {
+    color: red;
+  }
+label {
+    padding: 10px;
+}
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .container > img {
+.container > img {
     width: 50%;
+    display: none;
   }
-  .container > h1 {
+.container > h1 {
     font-family: 'Montserrat', impact;
     font-weight: 800;
     font-size: 2.5em;
@@ -21,12 +50,12 @@ body {
     letter-spacing: 2px;
   }
   
-  .carousel-container {
+.carousel-container {
     width: 50%;
     display: flex;
     justify-content: space-around;
   }
-  .carousel-images {
+.carousel-images {
     width: 80%;
     background: #8da6fa;
     padding: 10px;
@@ -34,12 +63,12 @@ body {
     box-sizing: border-box;
     box-shadow: 2px 2px #f2cd99;
   }
-  .carousel-images img {
+.carousel-images img {
     width: 100%;
     border-radius: 10px;
   }
 
-  .carousel-button {
+.carousel-button {
     align-self: center;
     background: #f2cd99;
     color: #888;
@@ -48,53 +77,25 @@ body {
     text-align: center;
     box-shadow: 1px 1px #fa8d8e;
   }
-  .carousel-button:hover {
+.carousel-button:hover {
     cursor: pointer;
     background: #fa8d8e;
     box-shadow: 1px 1px #f2cd99;
     color: white;
   }
-  .team-container > img {
+.team-container > img {
     width: 25%;
     display: center;
     margin-top: 6%;
     margin-bottom: 2%;
   }
-  .creating-user-manual {
+.creating-user-manual {
     margin-inline: 25px;
   }
-  .checkbox input, .checkbox label, .radio input, .radio label {
+.checkbox input, .checkbox label, .radio input, .radio label {
     display: inline;
   }
-  #textarea-1, #textarea-2, #the_content {
+/* #textarea-1, #textarea-2, #the_content {
     min-height: 600px;
     min-width: 600px;
-  }  
-
-  h2 {
-    font-family: 'Assistant', sans-serif;
-    font-size: 36px;
-    text-align: center;
-  }
-  h3 {
-    font-family: 'Assistant', sans-serif;
-    font-size: 34px;
-    text-align: center;
-  }
-    
-  body {
-    background-image: url('images/ps_neutral.png');
-  }
-  fieldset {
-    padding: 50px;
-  }
-  input, button, select, textarea {
-    display: block;
-    margin-bottom: 25px;
-  }
-  input[type=text].red-text {
-    color: red;
-  }
-  label {
-    padding-bottom: 10px;
-}
+  }   */
