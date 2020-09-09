@@ -46,9 +46,11 @@
               <fieldset>
                 <legend>My User Manual</legend>
                 <label for="name">Preferred Name</label>
-                <input type="text" id="name" placeholder="Enter name/nickname" name= "Full_Name" autofocus required>
+                <input type="text" id="name" placeholder="Enter name/nickname" name= "Preferred Name" autofocus required>
                          
                   <label for="select">Preferred meeting times</label>
+                  <!-- why is it not reading the preferred meeting times in the form? how do you do multiple choice when you are missing the input tag, which you can't use or it will craete its own block to enter text -->
+                   <!-- name= "Preferred meeting times"> -->
                   <select id="select">
                     <option value>Choose preferred time</option>
                     <optgroup label="Early West Coast Bird">
@@ -64,15 +66,17 @@
              <hr>
                 <legend>Preferred Ways to Receive Feedback</legend>
                   <label for="text-for-feedback">We have a diverse team that has grown exponentially over the past few months. We have a lot of new folks, several remote team members, so let's get to know each other!! It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration? ​We all bring different talents and skills, as well as different communication styles. Let's your peers know how comfortable you feel with blunt and to the point feeback or if you rather they have a more softer approach when they bring things up. Would you rather they do it on a standup? Or schedule a 1:1 chat? If you are unresponsive via Azure and Teams, can they call you on your cell or should they Cc your manager in an email to check in on you? Help your teammates find out how to bring out the best in you!</label></br>
-                 <textarea id="textarea-1"></textarea>
+                 <textarea id="textarea-1"></textarea> 
+                 <!-- name= "Preferred Ways to Receive Feedback" -->
              <hr>
                 <legend>Contact Details</legend>
                   <label for="full-name">Full Name</label>
                   <input type="text" id="full-name" placeholder="Your name here" name= "Full_Name" autofocus required>
                   <label for="email">Email</label>
-                  <input type="text" id="email" placeholder="name@email.com">
+                  <input type="text" id="email" placeholder="name@email.com" name= "Email"> 
                   <label for="select">Best way to reach me</label>
                   <select id="select">
+                      <!-- name= "Best_way_to_reach_me"> -->
                     <option value>Teams</option>
                     <option value>Skype</option>
                     <option value>Azure</option>
@@ -83,7 +87,8 @@
               <hr>
                 <legend>Things I need to succeed</legend>
                   <label for="checkbox-container">How do I learn best? Select all that apply.</label>
-                  <div class="checkbox-container">
+                  <div class="checkbox-container"></div>
+                   <!-- name= "How_do_I_learn_best"> -->
                     <div class="checkbox">
                       <input type="checkbox" id="checkbox1">
                       <label for="checkbox1"><span>through repetition</span></label>
@@ -101,7 +106,8 @@
              <hr>
                 <legend>Things I struggle with</legend>
                   <label for="radio-container">You can only pick one!</label>
-                  <div class="radio-container">
+                  <div class="radio-container"></div>
+                   <!-- name= "Things_I_struggle_with"> -->
                     <div class="radio">
                       <input type="radio" id="radio1" name="radio-group" checked>
                       <label for="radio1"><span>unnecessary reply all emails</span></label>
@@ -122,17 +128,17 @@
             <hr>
                 <legend>My favorite quote</legend>
                   <label for="text-about-quotes">Share your favorite saying or quote!</label></br>
-                 <textarea id="textarea-2"></textarea>
+                 <textarea id="textarea-2" name= "My_favorite_quote"></textarea>
                 <hr>
                 <legend>If I was a GIF/Meme</legend>
                   <label for="text-about-quotes">Paste a link to your GIF or Meme personified -- Keep it classy!</label></br>
-                 <textarea id="textarea-3"></textarea>
+                 <textarea id="textarea-3" name= "If I was a GIF/Meme:"></textarea>
                  <input type="submit" value="Submit this form">
                 </fieldset>
               </form>
             </section>
         <!-- </div> -->
-   <p>You can read all the Team's published Manuals <a href="index_2.html">here</a>!</p>
+   <!-- <p>You can read all the Team's published Manuals <a href="index_2.html">here</a>!</p> -->
 
    
 </body>
