@@ -131,9 +131,18 @@
                  <textarea id="textarea-2" name= "My_favorite_quote"></textarea>
                 <hr>
                 <legend>If I was a GIF/Meme</legend>
-                  <label for="text-about-quotes">Paste a link to your GIF or Meme personified -- Keep it classy!</label></br>
-                 <textarea id="textarea-3" name= "If I was a GIF/Meme:"></textarea>
-                 <input type="submit" value="Submit this form">
+                <form id="search-form">
+                    <label for="search-term">Search for Gifs:</label>
+                    <input type="text" name="search-term">
+                   
+                </form>
+        
+                <div id="giphy-results">
+                
+                </div>
+                <br><br>
+
+              <input type="submit" value="Submit this form">
                 </fieldset>
               </form>
             </section>
@@ -142,5 +151,6 @@
 
 </body>
 </html>
-<script src="app.js" charset="utf-8"></script>
+<script src="app.js" async defer charset="utf-8"></script>
+
 

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 body {
     background: #fdfbfb;
+    font-family: 'Assistant', sans-serif;
   }
 h2 {
     font-family: 'Assistant', sans-serif;
@@ -27,7 +28,6 @@ input, button, select {
 input[type=text].red-text {
     color: red;
   }
-}
 .container {
     display: flex;
     flex-direction: column;
@@ -93,7 +93,3 @@ input[type=text].red-text {
 .checkbox input, .checkbox label, .radio input, .radio label {
     display: inline;
   }
-/* #textarea-1, #textarea-2, #the_content {
-    min-height: 600px;
-    min-width: 600px;
-  }   */

@@ -42,45 +42,25 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => console.log('Success!', response))
-        .then(() => {
-            //This is where you write your code
-
-
-
-
-            //Do not alter below this line
-        })
+        .then(() => {        })
         .catch(error => console.error('Error!', error.message))
 })
 
-// const form = document.getElementById('application-form')
-// // console.log(form)
-// const state = document.getElementById('state')
-// // console.log(state)
-// const error = document.querySelector('#error')
-// // console.log(error)
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault()
-//     // console.log('this may work')
-//     if(state.value !== 'NJ'){
-//         error.innerText = 'Error: Applicant must reside in NJ'
-//         error.style.color = 'red'
-//         // alert('Hey we don\'t use alerts anymore')
-//     } else {
-//         error.innerText = ""
-//     }
-// })
-// -------- html
-
-
-
-// const scriptURL = 'source google page form'
-// const form = document.querySelector('form')
-// form.addEventListener('submit', (e) => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-//         .then(response => console.log('Success!', response))
-//         .then(() => {
-//           })
-//         .catch(error => console.error('Error!', error.message))
-// })
+const apiKey = "i9u5FoDahfPMI2LFAipRD3KXJ45afk0f"
+const gifSearch = (event) => {
+  event.preventDefault()
+  const giphyResultsDiv = document.getElementById('giphy-results')
+  const searchTerm = document.querySelector('input[name="search-term"]').value;
+  fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${searchTerm}`)
+    .then(res => res.json())
+    .then(res => {
+        console.log(res.data)
+      for(let i = 0; i < res.data.length; i++){
+        const url = res.data[i].images.fixed_width.url;
+        const image = document.createElement('img');
+        image.setAttribute('src', url);
+        giphyResultsDiv.appendChild(image);
+      }
+    })
+}
+document.querySelector("#search-form").addEventListener("submit", gifSearch)
