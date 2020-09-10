@@ -47,49 +47,51 @@
                 <legend>My User Manual</legend>
                 <label for="name">Preferred Name</label>
                 <input type="text" id="name" placeholder="Enter name/nickname" name= "Preferred Name" autofocus required>
+                <label for="select">Preferred meeting times:</label>
+                    <select name="Preferred meeting times" id="select">
+                        <option value='make-a-selection'>Select preferred meeting time</option>
+                        <option value='8-10 am'>8-10 am PST / 17-19 hr CET</option>
+                        <option value='5am-8am'>5-8 am PST / 14-17 hr CET</option>
+                        <option value='8pm-10pm'>8-10 pm PST / 5-7 am CET</option>
+                        <option value='10pm-12am'>10 pm-12 am PST / 7-9 am CET</option>
+                    </select>
+                    <br><br>
                          
-                  <label for="select">Preferred meeting times</label>
-                  <!-- why is it not reading the preferred meeting times in the form? how do you do multiple choice when you are missing the input tag, which you can't use or it will craete its own block to enter text -->
-                   <!-- name= "Preferred meeting times"> -->
-                  <select id="select">
-                    <option value>Choose preferred time</option>
-                    <optgroup label="Early West Coast Bird">
-                      <option value>5-8 am PST / 14-17 hr CET</option>
-                      <option value>8-10 am PST / 17-19 hr CET</option>
-                    </optgroup>
-                    <optgroup label="Early Dutch Express">
-                      <option value>8 pm - 10 pm PST / 5-7 am CET</option>
-                      <option value>10 pm - 12 am PST / 7-9 am CET</option>
-                    </optgroup>
-                  </select>
-               
-             <hr>
+                    <hr>
                 <legend>Preferred Ways to Receive Feedback</legend>
-                  <label for="text-for-feedback">We have a diverse team that has grown exponentially over the past few months. We have a lot of new folks, several remote team members, so let's get to know each other!! It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration? ​We all bring different talents and skills, as well as different communication styles. Let's your peers know how comfortable you feel with blunt and to the point feeback or if you rather they have a more softer approach when they bring things up. Would you rather they do it on a standup? Or schedule a 1:1 chat? If you are unresponsive via Azure and Teams, can they call you on your cell or should they Cc your manager in an email to check in on you? Help your teammates find out how to bring out the best in you!</label></br>
+                  <label for="text-for-feedback">We have a diverse team that has grown exponentially over the past few months. We have a lot of new folks, several remote team members, so let's get to know each other!! It would be awesome to learn what makes us tick. For eg- What are your individual preferences for communication and collaboration? ​We all bring different talents and skills, as well as different communication styles. Help your teammates find out how to bring out the best in you!</label></br>
                  <textarea id="textarea-1" name= "Preferred Ways to Receive Feedback"></textarea> 
-            
-             <hr>
+                 <hr>
                 <legend>Contact Details</legend>
                   <label for="full-name">Full Name</label>
                   <input type="text" id="full-name" placeholder="Your name here" name= "Full_Name" autofocus required>
                   <label for="email">Email</label>
                   <input type="text" id="email" placeholder="name@email.com" name= "Email"> 
+                
                   <label for="select">Best way to reach me</label>
-                  <select id="select">
-                      <!-- name= "Best_way_to_reach_me"> -->
-                    <option value>Teams</option>
-                    <option value>Skype</option>
-                    <option value>Azure</option>
-                    <option value>Email</option>
-                    <option value>1:1 Meeting</option>
-                 </select>
-                           
+                  <select name="Best_way_to_reach_me" id="select">
+                      <option value='placeholder'>Select choice</option>
+                      <option value='Teams'>Teams</option>
+                      <option value='Skype'>Skype</option>
+                      <option value='Azure'>Azure</option>
+                      <option value='Email'>Email</option>
+                      <option value='1:1 Meeting'>1:1 Meeting</option>
+                      </select>
+                      <br><br>
+                                           
               <hr>
-                <legend>Things I need to succeed</legend>
-                  <label for="checkbox-container">How do I learn best? Select all that apply.</label>
+              <legend>How do I learn best? Select all that apply</legend>
+              <input type="checkbox" name="checkbox1" value="repetition">
+              <label for="How_do_I_learn_best1"> through repetition</label><br>
+              <input type="checkbox" name="checkbox2" value="notes">
+              <label for="How_do_I_learn_best2"> watching and taking copious notes</label><br>
+              <input type="checkbox" name="checkbox3" value="independence" checked>
+              <label for="How_do_I_learn_best3">independently</label><br><br>
+
+                 <!-- <label for="checkbox-container">How do I learn best? Select all that apply.</label>
                   <div class="checkbox-container"></div>
-                   <!-- name= "How_do_I_learn_best"> -->
-                    <div class="checkbox">
+                   <!name= "How_do_I_learn_best"> -->
+                    <!-- <div class="checkbox">
                       <input type="checkbox" id="checkbox1">
                       <label for="checkbox1"><span>through repetition</span></label>
                     </div>
@@ -101,28 +103,26 @@
                       <input type="checkbox" id="checkbox3">
                       <label for="checkbox3"><span>independently</span></label>
                     </div>
-                  </div>
+                  </div> --> 
                   
              <hr>
-                <legend>Things I struggle with</legend>
-                  <label for="radio-container">You can only pick one!</label>
+                <label for="radio-container">Things I struggle with</label>
                   <div class="radio-container"></div>
-                   <!-- name= "Things_I_struggle_with"> -->
                     <div class="radio">
-                      <input type="radio" id="radio1" name="radio-group" checked>
+                      <input type="radio" id="radio1" name="Things_I_struggle_with" checked>
                       <label for="radio1"><span>unnecessary reply all emails</span></label>
                     </div>
                     <div class="radio">
-                      <input type="radio" id="radio2" name="radio-group">
+                      <input type="radio" id="radio2" name="Things_I_struggle_with">
                       <label for="radio2"><span>5 am meetings</span></label>
                     </div>
                     <div class="radio">
-                      <input type="radio" id="radio3" name="radio-group">
+                      <input type="radio" id="radio3" name="Things_I_struggle_with">
                       <label for="radio3"><span>quarterly business reviews with suppliers</span></label>
                     </div>
                   </div>
                   <div class="radio">
-                    <input type="radio" id="radio3" name="radio-group">
+                    <input type="radio" id="radio3" name="Things_I_struggle_with">
                     <label for="radio3"><span>other</span></label>
                   </div>
             <hr>
@@ -137,10 +137,9 @@
                 </fieldset>
               </form>
             </section>
-        <!-- </div> -->
-   <!-- <p>You can read all the Team's published Manuals <a href="index_2.html">here</a>!</p> -->
+        </div>
+            <p>You can read more about what makes teams click <a href=https://journals.sagepub.com/doi/pdf/10.2307/2666999>here</a>!</p>
 
-   
 </body>
 </html>
 <script src="app.js" charset="utf-8"></script>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 body {
-    background: #f9f9f9;
+    background: #fdfbfb;
   }
 h2 {
     font-family: 'Assistant', sans-serif;
@@ -18,7 +18,7 @@ fieldset {
   }
 input, button, select {
     display: block;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
   }
   #textarea-1, #textarea-2, #textarea-3 {
     display: block;
@@ -27,8 +27,6 @@ input, button, select {
 input[type=text].red-text {
     color: red;
   }
-label {
-    padding: 10px;
 }
 .container {
     display: flex;
